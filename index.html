@@ -33,7 +33,7 @@
             <!--div con immagine e nome-->
             <div>
               <img
-                class="avatarIo ps-2"
+                class="avatarIo ms-2"
                 src="img/avatar_io.jpg"
                 alt="my avatar"
               />
@@ -60,15 +60,15 @@
           <div class="ricerca p-2">
             <div class="input-group">
               <span class="input-group-text border-0" id="basic-addon1"
-                ><i class="fa-solid fa-magnifying-glass"></i
-              ></span>
+                ><i class="fa-solid fa-magnifying-glass"></i>
+              </span>
               <input
                 type="text"
                 class="form-control border-0"
                 placeholder="Cerca ho inizia una nuova Chat"
                 aria-label="Username"
-                aria-describedby="basic-addon1"
-              />
+                aria-describedby="basic-addon1"/>
+              
             </div>
           </div>
 
@@ -91,7 +91,21 @@
         <!-- sezione di destra nel main principale-->
 
         <section class="sectionRight">
-          <div class="headerRight"></div>
+
+          <div class="headerRight d-flex justify-content-between align-items-center">
+            <div class="d-flex">
+            <img src="img/avatar_1.jpg" class="ms-2" alt="">
+            <div class=" d-flex flex-column ps-2">
+            <span>Michele</span>
+            <span>ultimo accesso oggi alle 12:00</span>
+           </div>
+          </div>
+            <div >
+                <i class="fa-solid fa-magnifying-glass pe-2"></i>
+                <i class="fa-solid fa-paperclip pe-3"></i>
+                <i class="fa-solid fa-ellipsis-vertical pe-3"></i>
+            </div>
+          </div>
 
           <div class="messaggi"></div>
 

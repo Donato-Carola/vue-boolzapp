@@ -122,6 +122,20 @@ main>section>div.headerRight{
     border-left: 0.5px solid;
 }
 
+main>section>div.headerRight>div>img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
 main>section>div.messaggi{
     height: calc(100% - 100px);
 }
