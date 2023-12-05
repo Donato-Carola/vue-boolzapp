@@ -112,7 +112,7 @@ section>div.boxUser>div>div>div.nameTime>span:last-child{
 section.sectionRight{
     width: 60%;
     height: 100%;
-    background-image: url(../img/mine.jpg);
+   
 }
 
 main>section>div.headerRight{
@@ -137,10 +137,31 @@ main>section>div.headerRight>div>img{
 
 
 main>section>div.messaggi{
+    overflow: auto;
     height: calc(100% - 100px);
+    background-image: url(../img/mine.jpg);
 }
 
+
+
+div.messaggi>div>div.green{
+ 
+ 
+ width: 50%;
+
+ background-color: rgb(213, 249, 186);
+}
+
+div.messaggi>div>div.white{
+width: 50%;
+
+background-color: white;
+}
+
+
+
 main>section>div.footerMsg{
+   z-index: 1;
     height: 50px;
     width: 100%;
     background-color: aqua;
