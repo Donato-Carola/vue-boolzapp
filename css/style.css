@@ -6,13 +6,13 @@
 
 body>div:first-child{
     background-color:rgb(0, 150, 136) ;
-    height: 80px;
+    height: 100px;
  
 }
 
 body>div.backColor{
     background-color: rgb(213, 219, 217);
-    height: calc(100vh - 80px);
+    height: calc(100vh - 100px);
 }
 
 main {
@@ -31,15 +31,54 @@ main {
     
 }
 
+
+
+/*  todo: CSS della sezione di sinistra nel main principale */
+
+
 section.sectionLeft{
     width: 40%;
     height: 100%;
     background-color:blue;
 }
 
+main>section>div.headerLeft{
+    width: 100%;
+    height: 60px;
+    background-color: brown;
+}
+
+
+
+
+
+
+
+
+
+/* todo: CSS della sezione di destra nel main principale */
+
 section.sectionRight{
     width: 60%;
     height: 100%;
-    background-color: aquamarine;
+    background-image: url(../img/mine.jpg);
 }
+
+main>section>div.headerRight{
+    width: 100%;
+    height: 60px;
+    background-color: brown;
+    border-left: 0.5px solid;
+}
+
+main>section>div.messaggi{
+    height: calc(100% - 110px);
+}
+
+main>section>div.footerMsg{
+    height: 50px;
+    width: 100%;
+    background-color: aqua;
+}
+
 
