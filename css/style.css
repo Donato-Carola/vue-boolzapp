@@ -129,6 +129,9 @@ main>section>div.headerRight>div>img{
     object-fit: cover;
 }
 
+div.iconHeader{
+    color: rgb(177, 177, 177);
+}
 
 
 
@@ -164,7 +167,12 @@ main>section>div.footerMsg{
    z-index: 1;
     height: 50px;
     width: 100%;
-    background-color: aqua;
+    background-color: rgb(243, 238, 234);
 }
 
+main>section>div.footerMsg>div>input{
+    width: 500px;
+    
+
+}
 

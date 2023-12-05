@@ -40,7 +40,7 @@
               <span class="text-black ps-1">Sofia</span>
             </div>
             <!--Div con le tre icone-->
-            <div>
+            <div class="iconHeader">
               <i class="fa-solid fa-circle-notch pe-4"></i>
               <i class="fa-solid fa-message pe-4"></i>
               <i class="fa-solid fa-ellipsis-vertical pe-4"></i>
@@ -96,11 +96,11 @@
             <div class="d-flex">
             <img src="img/avatar_1.jpg" class="ms-2" alt="">
             <div class=" d-flex flex-column ps-2">
-            <span>Michele</span>
-            <span>ultimo accesso oggi alle 12:00</span>
+            <span class="text-black">Michele</span>
+            <span class="text-black">ultimo accesso oggi alle 12:00</span>
            </div>
           </div>
-            <div >
+            <div class="iconHeader">
                 <i class="fa-solid fa-magnifying-glass pe-2"></i>
                 <i class="fa-solid fa-paperclip pe-3"></i>
                 <i class="fa-solid fa-ellipsis-vertical pe-3"></i>
@@ -122,7 +122,20 @@
             </div>
           </div>
 
-          <div class="footerMsg"></div>
+          <div class="footerMsg d-flex align-items-center justify-content-around">
+
+             <div class="iconHeader"><i class="fa-regular fa-face-smile"></i></div>
+             
+                <div >
+                <input type="text" placeholder="Scrivi un messaggio" class="border-0 rounded p-1">
+                </div>
+
+                <div class="iconHeader"><i class="fa-solid fa-microphone"></i></div>
+             
+            
+
+          </div>
+
         </section>
       </main>
     </div>
