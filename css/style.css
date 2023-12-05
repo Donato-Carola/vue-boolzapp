@@ -78,12 +78,24 @@ section>div.ricerca>div>span{
 section>div.boxUser{
 overflow: auto;
 height: calc(100% - 155px);
-background-color: aqua;
+background-color: white;
 }
 
 section>div.boxUser>div{
     background-color: rgb(255, 255, 255);
-    height: 1000px;
+    color: black;
+    
+}
+
+section>div.boxUser>div>div>img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+}
+
+section>div.boxUser>div>div>div.nameTime>span:last-child{
+    color:rgb(198, 204, 210);
 }
 
 
