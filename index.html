@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
@@ -15,9 +18,57 @@
     <div id="app">
 
       <main>
-        <!-- sezione di sinistra nel main principale-->
+        <!--  sezione di sinistra nel main principale-->
         <section class="sectionLeft">
-          <div class="headerLeft"></div>
+          
+        
+
+        <!--DIV CHE CORRISPONDE AL BOX INIZIALE DELL'HEADER DI SINISTRA--> 
+        <div class="headerLeft d-flex justify-content-between align-items-center">
+          <!--div con immagine e nome-->
+            <div>
+            <img class="avatarIo ps-2" src="img/avatar_io.jpg" alt="my avatar">
+            <span class="text-black ps-1">Sofia</span>
+           </div>
+          <!--Div con le tre icone-->
+           <div >
+            <i class="fa-solid fa-circle-notch pe-4"></i>
+            <i class="fa-solid fa-message pe-4"></i>
+            <i class="fa-solid fa-ellipsis-vertical pe-4"></i>
+           </div>
+           </div> 
+          
+           
+        <!--SECONDO BOX A PARTIRE DA SOPRA CHE CONTIENE L'ATTIVAZIONE DELLE NOTIFICHE-->
+
+        
+
+          <div class="notifiche d-flex align-items-center pt-2 pb-2 ps-2">
+            <i class="fa-solid fa-bell-slash pe-2 pt-3"></i>
+            <div>
+            <div>Ricevi notifiche di nuove messaggi</div>
+            <a href="#">attiva notifiche desktop</a>
+           </div>
+          </div>
+
+
+
+
+          <div class="ricerca p-2 ">
+            <div class="input-group ">
+                <span class="input-group-text border-0" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+                <input type="text" class="form-control border-0" placeholder="Cerca ho inizia una nuova Chat" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+          </div>
+
+
+          <div class="boxUser">
+            <div>
+                
+            </div>
+          </div>
+
+
         </section>
 
         <!-- sezione di destra nel main principale-->
