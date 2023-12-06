@@ -122,13 +122,18 @@ main > section > div.messaggi {
   background-image: url(../img/mine.jpg);
 }
 
-div.messaggi > div > div.green {
+div.messaggi > div >div> div.green {
   width: 50%;
   align-self: self-end;
   background-color: rgb(213, 249, 186);
 }
 
-div.messaggi > div > div.white {
+div.orario{
+  float: right;
+  font-size: small;
+}
+
+div.messaggi > div >div> div.white {
   width: 50%;
   
   background-color: white;
