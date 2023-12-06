@@ -205,10 +205,6 @@ createApp({
         ]
         
     }
-  },
-  methods:{
-    onMessageClick(message){
-        message.visible = !message.visible;
-    }
   }
+  
 }).mount('#app')
