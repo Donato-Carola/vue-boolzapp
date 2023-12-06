@@ -205,6 +205,11 @@ createApp({
         ]
         
     }
+  },
+  methods:{
+    onContactClick(contact) {
+        contact.visible = !contact.visible;
+    }
   }
   
 }).mount('#app')

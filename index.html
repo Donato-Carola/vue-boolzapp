@@ -73,7 +73,7 @@
           </div>
 
           <div class="boxUser">
-            <div class="p-2 d-flex justify-content-between" v-for="contact in contacts" >
+            <div class="p-2 d-flex justify-content-between" v-for="(contact,index) in contacts" :key="contact.id" @click="onContactClick(contact)" >
               <div class="d-flex" >
                 <img :src="contact.avatar" alt="" />
                 <div class="nameTime d-flex flex-column ps-2">
@@ -108,18 +108,18 @@
           </div>
 
           <div class="messaggi">
-           
-            <div class="d-flex flex-column align-self-end"   v-for="contact in contacts">
+           <div v-if="contacts.visible">
+            <div class="d-flex flex-column align-self-end"   v-for="contact in contacts.messages">
                 <div class="green m-4  rounded text-black p-3 " >
-                    {{contact.messages[0].message}} 
+                    {{contact.message}} 
                 </div>
-                <div class="green m-4  rounded text-black p-3 ">
-                    {{contact.messages[1].message}} 
+               <!-- <div class="green m-4  rounded text-black p-3 ">
+                    {{contact.message}} 
                 </div>
                 <div class="white m-4  rounded text-black p-3 ">
                     {{contact.messages[0].message}} 
                     
-             
+            </div> -->
                 
             </div>
           </div>
