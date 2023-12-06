@@ -124,13 +124,13 @@ main > section > div.messaggi {
 
 div.messaggi > div > div.green {
   width: 50%;
-
+  align-self: self-end;
   background-color: rgb(213, 249, 186);
 }
 
 div.messaggi > div > div.white {
   width: 50%;
-
+  
   background-color: white;
 }
 
