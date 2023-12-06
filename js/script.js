@@ -16,7 +16,7 @@ createApp({
                 id:0,
                 name: 'Michele',
                 avatar: './img/avatar_1.jpg',
-                visible: true,
+                visible: false,
                 messages: [
                     {
                         id:0,
@@ -206,10 +206,10 @@ createApp({
         
     }
   },
-  methods:{
-    onContactClick(contact) {
-        contact.visible = !contact.visible;
+ methods: {
+    onContactClick(contact){
+        contact.visible = !contact.visible
     }
-  }
+ }
   
 }).mount('#app')

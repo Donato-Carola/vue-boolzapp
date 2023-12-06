@@ -109,18 +109,18 @@
 
           <div class="messaggi">
 
-           <div v-show="true">
-            <div class="d-flex flex-column align-self-end"  v-for="contact in contacts">
+           <div v-if="contacts.visible">
+            <div class="d-flex flex-column align-self-end"  v-for="contact in contacts" >
                 <div class="green m-4  rounded text-black p-3 " >
-                    {{contact.messages[0].message}} 
-                    <div class="orario">{{contact.messages[0].date}}</div>
+                    {{contact.messages.message}} 
+                    <div class="orario">{{contact.date}}</div>
                 </div>
                 <div class="green m-4  rounded text-black p-3 " >
-                  {{contact.messages[1].message}} 
-                  <div class="orario">{{contact.messages[0].date}}</div>
+                  {{contact.message}} 
+                  <div class="orario">{{contact.date}}</div>
               </div>
               <div class="white m-4  rounded text-black p-3 ">
-                {{contact.messages[1].message}} 
+                {{contact.message}} 
                 
         </div>
                <!-- <div class="green m-4  rounded text-black p-3 ">
