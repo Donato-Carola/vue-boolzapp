@@ -216,9 +216,9 @@ createApp({
     },
 
     newMsg(){
-       const activeContact = this.contacts[this.activeIndex];  //indice del contatto attivo
+      // const activeContact = this.contacts[this.activeIndex];  //indice del contatto attivo
        if(this.userInput.trim() !== ''){
-            activeContact.messages.push({
+        this.contacts[this.activeIndex].messages.push({
              date:new Date().toLocaleString(),
              message:this.userInput,
              status: 'sent',
@@ -234,8 +234,8 @@ createApp({
  },
 
  addBotMessage() {
-    const activeContact = this.contacts[this.activeIndex];
-    activeContact.messages.push({
+    //const activeContact = this.contacts[this.activeIndex];
+    this.contacts[this.activeIndex].messages.push({
       date: new Date().toLocaleString(),
       message: 'ok',
       status: 'received',

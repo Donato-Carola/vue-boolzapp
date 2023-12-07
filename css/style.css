@@ -74,6 +74,11 @@ section > div.boxUser {
   background-color: white;
 }
 
+section > div.boxUser>.active{
+  background-color: rgb(233, 235, 235);
+}
+
+
 section > div.boxUser > div {
   background-color: rgb(255, 255, 255);
   color: black;

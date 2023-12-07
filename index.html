@@ -74,7 +74,7 @@
           </div>
 
           <div class="boxUser">
-            <div class="p-2 d-flex justify-content-between" v-for="(contact,index) in contacts" @click="onContactClick(index)" >
+            <div class="p-2 d-flex justify-content-between " v-for="(contact,index) in contacts" @click="onContactClick(index)" :class=" index ? '' : 'active' ">
               <div class="d-flex" >
                 <img :src="contact.avatar" alt="" />
                 <div class="nameTime d-flex flex-column ps-2">
