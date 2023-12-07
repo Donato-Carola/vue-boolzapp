@@ -216,7 +216,7 @@ createApp({
     },
 
     newMsg(){
-       const activeContact = this.contacts[this.activeIndex];
+       const activeContact = this.contacts[this.activeIndex];  //indice del contatto attivo
        if(this.userInput.trim() !== ''){
             activeContact.messages.push({
              date:new Date().toLocaleString(),
@@ -227,9 +227,21 @@ createApp({
        this.userInput='';
        }     
      
-      
+       setTimeout(() => {
+        this.addBotMessage();
+      }, 1000);
     
  },
+
+ addBotMessage() {
+    const activeContact = this.contacts[this.activeIndex];
+    activeContact.messages.push({
+      date: new Date().toLocaleString(),
+      message: 'ok',
+      status: 'received',
+    });
+  },
+
 }
   
 }).mount('#app');
