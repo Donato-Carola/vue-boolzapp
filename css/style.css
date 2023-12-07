@@ -74,7 +74,7 @@ section > div.boxUser {
   background-color: white;
 }
 
-section > div.boxUser>div.active {
+section > div.boxUser>div.active:hover {
   background-color: rgb(233, 235, 235);
 }
 
