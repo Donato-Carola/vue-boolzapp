@@ -18,10 +18,11 @@
   </head>
 
   <body>
+     
     <div></div>
     <div class="backColor"></div>
 
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+   
     <div id="app">
       <main>
         <!--  sezione di sinistra nel main principale-->
@@ -73,7 +74,7 @@
           </div>
 
           <div class="boxUser">
-            <div class="p-2 d-flex justify-content-between" v-for="(contact,index) in contacts" :key="contact.id" @click="onContactClick(contact)" >
+            <div class="p-2 d-flex justify-content-between" v-for="(contact,index) in contacts" @click="onContactClick(index)" >
               <div class="d-flex" >
                 <img :src="contact.avatar" alt="" />
                 <div class="nameTime d-flex flex-column ps-2">
@@ -109,30 +110,17 @@
 
           <div class="messaggi">
 
-           <div v-if="contacts.visible">
-            <div class="d-flex flex-column align-self-end"  v-for="contact in contacts" >
-                <div class="green m-4  rounded text-black p-3 " >
-                    {{contact.messages.message}} 
-                    <div class="orario">{{contact.date}}</div>
+        
+            <div class="d-flex flex-column align-self-end"  v-for="message in contacts[activeIndex].messages" >
+                <div class=" m-4  rounded text-black p-3 " >
+                    {{message.message}} 
+                    <div class="orario">{{message.date}}</div>
                 </div>
-                <div class="green m-4  rounded text-black p-3 " >
-                  {{contact.message}} 
-                  <div class="orario">{{contact.date}}</div>
-              </div>
-              <div class="white m-4  rounded text-black p-3 ">
-                {{contact.message}} 
-                
-        </div>
-               <!-- <div class="green m-4  rounded text-black p-3 ">
-                    {{contact.message}} 
-                </div>
-                <div class="white m-4  rounded text-black p-3 ">
-                    {{contact.messages[0].message}} 
-                    
-            </div> -->
+               
+           
                 
             </div>
-          </div>
+          
           </div>
 
           <div class="footerMsg d-flex align-items-center justify-content-around">
@@ -152,6 +140,7 @@
         </section>
       </main>
     </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

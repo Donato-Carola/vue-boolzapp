@@ -10,13 +10,15 @@ const { createApp } = Vue
 
 createApp({
   data() {
-    return {
+    return { 
+        activeIndex : 0,
         contacts: [
+           
             {
                 id:0,
                 name: 'Michele',
                 avatar: './img/avatar_1.jpg',
-                visible: false,
+                visible: true,
                 messages: [
                     {
                         id:0,
@@ -207,9 +209,10 @@ createApp({
     }
   },
  methods: {
-    onContactClick(contact){
-        contact.visible = !contact.visible
+    onContactClick(index){
+        console.log(index)
+        this.activeIndex = index;
     }
- }
+ },
   
-}).mount('#app')
+}).mount('#app');
