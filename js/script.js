@@ -12,6 +12,7 @@ createApp({
   data() {
     return { 
         activeIndex : 0,
+        userInput : '',
         contacts: [
            
             {
@@ -212,7 +213,23 @@ createApp({
     onContactClick(index){
         console.log(index)
         this.activeIndex = index;
-    }
+    },
+
+    newMsg(){
+       const activeContact = this.contacts[this.activeIndex];
+       if(this.userInput.trim() !== ''){
+            activeContact.messages.push({
+             date:new Date().toLocaleString(),
+             message:this.userInput,
+             status: 'sent',
+            });
+
+       this.userInput='';
+       }     
+     
+      
+    
  },
+}
   
 }).mount('#app');

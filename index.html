@@ -130,7 +130,7 @@
              <div class="iconHeader"><i class="fa-regular fa-face-smile"></i></div>
              
                 <div >
-                <input type="text" placeholder="Scrivi un messaggio" class="border-0 rounded p-1">
+                <input type="text" placeholder="Scrivi un messaggio" class="border-0 rounded p-1" v-model="userInput" @keyup.enter="newMsg">
                 </div>
 
                 <div class="iconHeader"><i class="fa-solid fa-microphone"></i></div>
