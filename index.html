@@ -112,7 +112,7 @@
 
         
             <div class="d-flex flex-column align-self-end"  v-for="message in contacts[activeIndex].messages" >
-                <div class=" m-4  rounded text-black p-3 " >
+                <div class=" m-4  rounded text-black p-3 " :class="message.status === 'sent' ? 'green' : 'white'">
                     {{message.message}} 
                     <div class="orario">{{message.date}}</div>
                 </div>
