@@ -74,7 +74,7 @@
           </div>
 
           <div class="boxUser">
-            <div class="p-2 d-flex justify-content-between active" v-for="(contact,index) in contacts" @click="onContactClick(index)" >
+            <button class=" contactUser p-2 d-flex justify-content-between active" v-for="(contact,index) in contacts" @click="onContactClick(index)" >
               <div class="d-flex" >
                 <img :src="contact.avatar" alt="" />
                 <div class="nameTime d-flex flex-column ps-2">
@@ -85,7 +85,7 @@
               <div class="orario">
                 <span>12:00</span>
               </div>
-            </div>
+            </button>
           </div>
         </section>
 
