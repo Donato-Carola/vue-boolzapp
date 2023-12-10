@@ -59,6 +59,9 @@ section > div.notifiche > i {
   font-size: xx-large;
 }
 
+
+/*** CSS PER LA RICERCA DEL NOME*/
+
 section > div.ricerca {
   background-color: rgb(250, 250, 250);
   height: 45px;
@@ -67,6 +70,9 @@ section > div.ricerca {
 section > div.ricerca > div > span {
   background-color: white;
 }
+
+
+/**CSS PER IL BOX CONTATTI*/
 
 section > div.boxUser {
   overflow: auto;
@@ -135,9 +141,29 @@ div.messaggi > div > div.green {
   background-color: rgb(213, 249, 186);
 }
 
-div.orario{
-  float: right;
+div.singleMessage{
+  position: relative;
+}
+
+div.singleMessage>div.arrow>i{
+  
+  display: none;
+
+}
+
+div.messaggi > div:hover i{
+  display: inline-block;
+}
+
+
+
+div.hours{
+  position: absolute;
+  right: 0;
+  bottom: 0;
   font-size: small;
+ 
+  
 }
 
 div.messaggi > div > div.white {

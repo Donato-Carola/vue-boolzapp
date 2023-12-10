@@ -68,7 +68,9 @@
                 class="form-control border-0"
                 placeholder="Cerca o inizia una nuova Chat"
                 aria-label="Username"
-                aria-describedby="basic-addon1"/>
+                aria-describedby="basic-addon1"
+                v-model="nameSearch"
+                />
               
             </div>
           </div>
@@ -108,13 +110,19 @@
             </div>
           </div>
 
+
           <div class="messaggi">
 
         
-            <div class="d-flex flex-column align-self-end"  v-for="message in contacts[activeIndex].messages" >
-                <div class=" m-4  rounded text-black p-3 " :class="message.status === 'sent' ? 'green' : 'white'">
+            <div class="messageArrow d-flex flex-column align-self-end"  v-for="message in contacts[activeIndex].messages" >
+                <div class=" singleMessage m-4  rounded text-black p-3 d-flex justify-content-between" :class="message.status === 'sent' ? 'green' : 'white'">
                     {{message.message}} 
-                    <div class="orario">{{message.date}}</div>
+                    <div class="hours">{{message.date}}
+                    
+                    </div>
+                    <div class="arrow">
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </div>
                 </div>
                
            

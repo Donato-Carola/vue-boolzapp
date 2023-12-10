@@ -13,6 +13,7 @@ createApp({
     return { 
         activeIndex : 0,
         userInput : '',
+        nameSearch : '',
         contacts: [
            
             {
