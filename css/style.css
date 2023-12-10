@@ -67,10 +67,33 @@ section > div.ricerca {
   height: 45px;
 }
 
-section > div.ricerca > div > span {
+section > div.ricerca > div.searchContact > span {
   background-color: white;
 }
 
+section > div.ricerca > div.searchContact{
+  position: relative;
+}
+
+.search-results {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  background-color: #5e5e5e;
+  box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-results li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.search-results li:hover {
+  background-color: #292929;
+}
 
 /**CSS PER IL BOX CONTATTI*/
 

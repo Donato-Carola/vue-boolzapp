@@ -58,8 +58,9 @@
             </div>
           </div>
 
+             <!--box della ricerca dei contatti-->
           <div class="ricerca p-2">
-            <div class="input-group">
+            <div class="searchContact input-group ">
               <span class="input-group-text border-0" id="basic-addon1"
                 ><i class="fa-solid fa-magnifying-glass"></i>
               </span>
@@ -69,8 +70,16 @@
                 placeholder="Cerca o inizia una nuova Chat"
                 aria-label="Username"
                 aria-describedby="basic-addon1"
-                v-model="nameSearch"
+                v-model="nameSearch"  @input="filterContacts"
                 />
+                <ul v-show="showResults" class="search-results">
+                  <li v-for="(contact,index) in filteredContacts" :key="contact.name" @click="selectContact(contact)">
+                  <span @click="onContactClick(index)">{{ contact.name }}</span>  
+
+                  </li>
+                </ul>
+
+
               
             </div>
           </div>
