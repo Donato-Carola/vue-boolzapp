@@ -251,16 +251,16 @@ createApp({
   selectContact(contact) {
     this.$emit('selectContact', contact);
     this.showResults = false; // Nascondi i risultati dopo la selezione
-  },
-
-},
-
-computed: {
-    filteredContacts() {
+  }, 
+  
+  filteredContacts() {
       return this.contacts.filter(contact =>
         contact.name.toLowerCase().includes(this.nameSearch.toLowerCase()) && contact.visible
       );
     },
-  },
+
+},
+
+
   
 }).mount('#app');
